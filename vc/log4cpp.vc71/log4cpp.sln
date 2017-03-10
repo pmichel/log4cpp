@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cpp", "log4cpp.vcproj", "{76AE4A65-ED02-4440-A907-EBE6D7848BCB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		liblog4cpp-vc71-mt = liblog4cpp-vc71-mt
+		liblog4cpp-vc71-mt-gd = liblog4cpp-vc71-mt-gd
+		liblog4cpp-vc71-mt-s = liblog4cpp-vc71-mt-s
+		liblog4cpp-vc71-mt-sgd = liblog4cpp-vc71-mt-sgd
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt.ActiveCfg = liblog4cpp-vc71-mt|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt.Build.0 = liblog4cpp-vc71-mt|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-gd.ActiveCfg = liblog4cpp-vc71-mt-gd|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-gd.Build.0 = liblog4cpp-vc71-mt-gd|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-s.ActiveCfg = liblog4cpp-vc71-mt-s|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-s.Build.0 = liblog4cpp-vc71-mt-s|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-sgd.ActiveCfg = liblog4cpp-vc71-mt-sgd|Win32
+		{76AE4A65-ED02-4440-A907-EBE6D7848BCB}.liblog4cpp-vc71-mt-sgd.Build.0 = liblog4cpp-vc71-mt-sgd|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

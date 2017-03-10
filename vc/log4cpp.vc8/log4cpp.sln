@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cpp", "log4cpp.vcproj", "{38423DC4-4522-4B42-B315-9B1CB6C8161B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		liblog4cpp-vc8-mt|Win32 = liblog4cpp-vc8-mt|Win32
+		liblog4cpp-vc8-mt-gd|Win32 = liblog4cpp-vc8-mt-gd|Win32
+		liblog4cpp-vc8-mt-s|Win32 = liblog4cpp-vc8-mt-s|Win32
+		liblog4cpp-vc8-mt-sgd|Win32 = liblog4cpp-vc8-mt-sgd|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt|Win32.ActiveCfg = liblog4cpp-vc8-mt|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt|Win32.Build.0 = liblog4cpp-vc8-mt|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-gd|Win32.ActiveCfg = liblog4cpp-vc8-mt-gd|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-gd|Win32.Build.0 = liblog4cpp-vc8-mt-gd|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-s|Win32.ActiveCfg = liblog4cpp-vc8-mt-s|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-s|Win32.Build.0 = liblog4cpp-vc8-mt-s|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-sgd|Win32.ActiveCfg = liblog4cpp-vc8-mt-sgd|Win32
+		{38423DC4-4522-4B42-B315-9B1CB6C8161B}.liblog4cpp-vc8-mt-sgd|Win32.Build.0 = liblog4cpp-vc8-mt-sgd|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

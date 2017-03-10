@@ -1,0 +1,7 @@
+#ifndef _LOG4CPP_EXPORT_HH
+#define _LOG4CPP_EXPORT_HH
+
+#define LOG4CPP_EXPORT 
+
+#endif // _LOG4CPP_EXPORT_HH
+

@@ -1,0 +1,1484 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: log4cpp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD3.bat" with contents
+[
+@echo off
+if not exist .\Release md .\Release
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Release -r .\Release .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Release\NTEventLogCategories.res .\Release\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Release\NTEventLogAppender.dll .\Release\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPD3.bat"
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD4.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Release/" /Fp"Release/log4cpp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPD4.tmp" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD5.tmp" with contents
+[
+/nologo /out:"Release\log4cpp.lib" 
+.\Release\Appender.obj
+.\Release\AppenderSkeleton.obj
+.\Release\BasicConfigurator.obj
+.\Release\BasicLayout.obj
+.\Release\Category.obj
+.\Release\CategoryStream.obj
+.\Release\Configurator.obj
+.\Release\DummyThreads.obj
+.\Release\FileAppender.obj
+.\Release\Filter.obj
+.\Release\FixedContextCategory.obj
+.\Release\HierarchyMaintainer.obj
+.\Release\IdsaAppender.obj
+.\Release\LayoutAppender.obj
+.\Release\LoggingEvent.obj
+.\Release\MSThreads.obj
+.\Release\NDC.obj
+.\Release\NTEventLogAppender.obj
+.\Release\OmniThreads.obj
+.\Release\OstreamAppender.obj
+.\Release\PatternLayout.obj
+.\Release\PortabilityImpl.obj
+.\Release\Priority.obj
+.\Release\Properties.obj
+.\Release\PropertyConfigurator.obj
+.\Release\PropertyConfiguratorImpl.obj
+.\Release\PThreads.obj
+.\Release\RemoteSyslogAppender.obj
+.\Release\RollingFileAppender.obj
+.\Release\SimpleConfigurator.obj
+.\Release\SimpleLayout.obj
+.\Release\StringQueueAppender.obj
+.\Release\StringUtil.obj
+.\Release\TimeStamp.obj
+.\Release\Win32DebugAppender.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\temp\GAA5034\RSPD5.tmp"
+<h3>Output Window</h3>
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+log4cpp.lib - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: log4cpp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD6.bat" with contents
+[
+@echo off
+if not exist .\Debug md .\Debug
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Debug -r .\Debug .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Debug\NTEventLogCategories.res .\Debug\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Debug\NTEventLogAppender.dll .\Debug\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPD6.bat"
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Debug/" /Fp"Debug/log4cpp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPD7.tmp" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD8.tmp" with contents
+[
+/nologo /out:"Debug\log4cppD.lib" 
+.\Debug\Appender.obj
+.\Debug\AppenderSkeleton.obj
+.\Debug\BasicConfigurator.obj
+.\Debug\BasicLayout.obj
+.\Debug\Category.obj
+.\Debug\CategoryStream.obj
+.\Debug\Configurator.obj
+.\Debug\DummyThreads.obj
+.\Debug\FileAppender.obj
+.\Debug\Filter.obj
+.\Debug\FixedContextCategory.obj
+.\Debug\HierarchyMaintainer.obj
+.\Debug\IdsaAppender.obj
+.\Debug\LayoutAppender.obj
+.\Debug\LoggingEvent.obj
+.\Debug\MSThreads.obj
+.\Debug\NDC.obj
+.\Debug\NTEventLogAppender.obj
+.\Debug\OmniThreads.obj
+.\Debug\OstreamAppender.obj
+.\Debug\PatternLayout.obj
+.\Debug\PortabilityImpl.obj
+.\Debug\Priority.obj
+.\Debug\Properties.obj
+.\Debug\PropertyConfigurator.obj
+.\Debug\PropertyConfiguratorImpl.obj
+.\Debug\PThreads.obj
+.\Debug\RemoteSyslogAppender.obj
+.\Debug\RollingFileAppender.obj
+.\Debug\SimpleConfigurator.obj
+.\Debug\SimpleLayout.obj
+.\Debug\StringQueueAppender.obj
+.\Debug\StringUtil.obj
+.\Debug\TimeStamp.obj
+.\Debug\Win32DebugAppender.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\temp\GAA5034\RSPD8.tmp"
+<h3>Output Window</h3>
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+c:\entwicklung\dev_b6\log4cpp\src\patternlayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+log4cppD.lib - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: log4cppDLL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPD9.bat" with contents
+[
+@echo off
+if not exist .\Release md .\Release
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Release -r .\Release .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Release\NTEventLogCategories.res .\Release\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Release\NTEventLogAppender.dll .\Release\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPD9.bat"
+Creating command line "rc.exe /l 0x409 /fo"Release/log4cppDLL.res" /d "NDEBUG" "C:\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\log4cppDLL.rc"" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPDA.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Release/" /Fp"Release/log4cppDLL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DllMain.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPDA.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPDB.tmp" with contents
+[
+kernel32.lib user32.lib ws2_32.lib advapi32.lib /nologo /dll /incremental:no /pdb:"Release/log4cpp.pdb" /machine:I386 /out:"Release/log4cpp.dll" /implib:"Release/log4cpp.lib" 
+.\Release\Appender.obj
+.\Release\AppenderSkeleton.obj
+.\Release\BasicConfigurator.obj
+.\Release\BasicLayout.obj
+.\Release\Category.obj
+.\Release\CategoryStream.obj
+.\Release\Configurator.obj
+.\Release\DllMain.obj
+.\Release\DummyThreads.obj
+.\Release\FileAppender.obj
+.\Release\Filter.obj
+.\Release\FixedContextCategory.obj
+.\Release\HierarchyMaintainer.obj
+.\Release\IdsaAppender.obj
+.\Release\LayoutAppender.obj
+.\Release\LoggingEvent.obj
+.\Release\MSThreads.obj
+.\Release\NDC.obj
+.\Release\NTEventLogAppender.obj
+.\Release\OmniThreads.obj
+.\Release\OstreamAppender.obj
+.\Release\PatternLayout.obj
+.\Release\PortabilityImpl.obj
+.\Release\Priority.obj
+.\Release\Properties.obj
+.\Release\PropertyConfigurator.obj
+.\Release\PropertyConfiguratorImpl.obj
+.\Release\PThreads.obj
+.\Release\RemoteSyslogAppender.obj
+.\Release\RollingFileAppender.obj
+.\Release\SimpleConfigurator.obj
+.\Release\SimpleLayout.obj
+.\Release\StringQueueAppender.obj
+.\Release\StringUtil.obj
+.\Release\TimeStamp.obj
+.\Release\Win32DebugAppender.obj
+.\Release\log4cppDLL.res
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPDB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DllMain.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Linking...
+   Creating library Release/log4cpp.lib and object Release/log4cpp.exp
+
+
+
+<h3>Results</h3>
+log4cpp.dll - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: log4cppDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPDF.bat" with contents
+[
+@echo off
+if not exist .\Debug md .\Debug
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Debug -r .\Debug .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Debug\NTEventLogCategories.res .\Debug\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Debug\NTEventLogAppender.dll .\Debug\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPDF.bat"
+Creating command line "rc.exe /l 0x409 /fo"Debug/log4cppDLL.res" /d "_DEBUG" "C:\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\log4cppDLL.rc"" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Debug/" /Fp"Debug/log4cppDLL.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DllMain.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPE0.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE1.tmp" with contents
+[
+kernel32.lib user32.lib ws2_32.lib advapi32.lib /nologo /dll /incremental:yes /pdb:"Debug/log4cppD.pdb" /debug /machine:I386 /out:"Debug/log4cppD.dll" /implib:"Debug/log4cppD.lib" /pdbtype:sept 
+.\Debug\Appender.obj
+.\Debug\AppenderSkeleton.obj
+.\Debug\BasicConfigurator.obj
+.\Debug\BasicLayout.obj
+.\Debug\Category.obj
+.\Debug\CategoryStream.obj
+.\Debug\Configurator.obj
+.\Debug\DllMain.obj
+.\Debug\DummyThreads.obj
+.\Debug\FileAppender.obj
+.\Debug\Filter.obj
+.\Debug\FixedContextCategory.obj
+.\Debug\HierarchyMaintainer.obj
+.\Debug\IdsaAppender.obj
+.\Debug\LayoutAppender.obj
+.\Debug\LoggingEvent.obj
+.\Debug\MSThreads.obj
+.\Debug\NDC.obj
+.\Debug\NTEventLogAppender.obj
+.\Debug\OmniThreads.obj
+.\Debug\OstreamAppender.obj
+.\Debug\PatternLayout.obj
+.\Debug\PortabilityImpl.obj
+.\Debug\Priority.obj
+.\Debug\Properties.obj
+.\Debug\PropertyConfigurator.obj
+.\Debug\PropertyConfiguratorImpl.obj
+.\Debug\PThreads.obj
+.\Debug\RemoteSyslogAppender.obj
+.\Debug\RollingFileAppender.obj
+.\Debug\SimpleConfigurator.obj
+.\Debug\SimpleLayout.obj
+.\Debug\StringQueueAppender.obj
+.\Debug\StringUtil.obj
+.\Debug\TimeStamp.obj
+.\Debug\Win32DebugAppender.obj
+.\Debug\log4cppDLL.res
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPE1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DllMain.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+c:\entwicklung\dev_b6\log4cpp\src\patternlayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Linking...
+   Creating library Debug/log4cppD.lib and object Debug/log4cppD.exp
+
+
+
+<h3>Results</h3>
+log4cppD.dll - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: log4cpp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE5.bat" with contents
+[
+@echo off
+if not exist .\Release md .\Release
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Release -r .\Release .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Release\NTEventLogCategories.res .\Release\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Release\NTEventLogAppender.dll .\Release\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPE5.bat"
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Release/" /Fp"Release/log4cpp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPE6.tmp" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE7.tmp" with contents
+[
+/nologo /out:"Release\log4cpp.lib" 
+.\Release\Appender.obj
+.\Release\AppenderSkeleton.obj
+.\Release\BasicConfigurator.obj
+.\Release\BasicLayout.obj
+.\Release\Category.obj
+.\Release\CategoryStream.obj
+.\Release\Configurator.obj
+.\Release\DummyThreads.obj
+.\Release\FileAppender.obj
+.\Release\Filter.obj
+.\Release\FixedContextCategory.obj
+.\Release\HierarchyMaintainer.obj
+.\Release\IdsaAppender.obj
+.\Release\LayoutAppender.obj
+.\Release\LoggingEvent.obj
+.\Release\MSThreads.obj
+.\Release\NDC.obj
+.\Release\NTEventLogAppender.obj
+.\Release\OmniThreads.obj
+.\Release\OstreamAppender.obj
+.\Release\PatternLayout.obj
+.\Release\PortabilityImpl.obj
+.\Release\Priority.obj
+.\Release\Properties.obj
+.\Release\PropertyConfigurator.obj
+.\Release\PropertyConfiguratorImpl.obj
+.\Release\PThreads.obj
+.\Release\RemoteSyslogAppender.obj
+.\Release\RollingFileAppender.obj
+.\Release\SimpleConfigurator.obj
+.\Release\SimpleLayout.obj
+.\Release\StringQueueAppender.obj
+.\Release\StringUtil.obj
+.\Release\TimeStamp.obj
+.\Release\Win32DebugAppender.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\temp\GAA5034\RSPE7.tmp"
+<h3>Output Window</h3>
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Creating library...
+<h3>
+--------------------Configuration: testCategory - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testCategory.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testCategory.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPE8.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPE9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testCategory.pdb" /machine:I386 /out:"Release/testCategory.exe" 
+.\Release\testCategory.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPE9.tmp"
+<h3>Output Window</h3>
+Compiling...
+testCategory.cpp
+Linking...
+   Creating library Release/testCategory.lib and object Release/testCategory.exp
+
+
+
+<h3>Results</h3>
+testCategory.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: log4cpp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPED.bat" with contents
+[
+@echo off
+if not exist .\Debug md .\Debug
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Debug -r .\Debug .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Debug\NTEventLogCategories.res .\Debug\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Debug\NTEventLogAppender.dll .\Debug\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPED.bat"
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPEE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Debug/" /Fp"Debug/log4cpp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPEE.tmp" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPEF.tmp" with contents
+[
+/nologo /out:"Debug\log4cppD.lib" 
+.\Debug\Appender.obj
+.\Debug\AppenderSkeleton.obj
+.\Debug\BasicConfigurator.obj
+.\Debug\BasicLayout.obj
+.\Debug\Category.obj
+.\Debug\CategoryStream.obj
+.\Debug\Configurator.obj
+.\Debug\DummyThreads.obj
+.\Debug\FileAppender.obj
+.\Debug\Filter.obj
+.\Debug\FixedContextCategory.obj
+.\Debug\HierarchyMaintainer.obj
+.\Debug\IdsaAppender.obj
+.\Debug\LayoutAppender.obj
+.\Debug\LoggingEvent.obj
+.\Debug\MSThreads.obj
+.\Debug\NDC.obj
+.\Debug\NTEventLogAppender.obj
+.\Debug\OmniThreads.obj
+.\Debug\OstreamAppender.obj
+.\Debug\PatternLayout.obj
+.\Debug\PortabilityImpl.obj
+.\Debug\Priority.obj
+.\Debug\Properties.obj
+.\Debug\PropertyConfigurator.obj
+.\Debug\PropertyConfiguratorImpl.obj
+.\Debug\PThreads.obj
+.\Debug\RemoteSyslogAppender.obj
+.\Debug\RollingFileAppender.obj
+.\Debug\SimpleConfigurator.obj
+.\Debug\SimpleLayout.obj
+.\Debug\StringQueueAppender.obj
+.\Debug\StringUtil.obj
+.\Debug\TimeStamp.obj
+.\Debug\Win32DebugAppender.obj
+]
+Creating command line "link.exe -lib @C:\WINNT\temp\GAA5034\RSPEF.tmp"
+<h3>Output Window</h3>
+Compiling...
+Skipping... (no relevant changes detected)
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Creating library...
+<h3>
+--------------------Configuration: testCategory - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPF0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/testCategory.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testCategory.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPF0.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPF1.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testCategory.pdb" /debug /machine:I386 /out:"Debug/testCategory.exe" /pdbtype:sept 
+.\Debug\testCategory.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPF1.tmp"
+<h3>Output Window</h3>
+Compiling...
+testCategory.cpp
+Linking...
+   Creating library Debug/testCategory.lib and object Debug/testCategory.exp
+
+
+
+<h3>Results</h3>
+testCategory.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: log4cppDLL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPF5.bat" with contents
+[
+@echo off
+if not exist .\Release md .\Release
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Release -r .\Release .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Release\NTEventLogCategories.res .\Release\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Release\NTEventLogAppender.dll .\Release\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPF5.bat"
+Creating command line "rc.exe /l 0x409 /fo"Release/log4cppDLL.res" /d "NDEBUG" "C:\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\log4cppDLL.rc"" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPF6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Release/" /Fp"Release/log4cppDLL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DllMain.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPF6.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPF7.tmp" with contents
+[
+kernel32.lib user32.lib ws2_32.lib advapi32.lib /nologo /dll /incremental:no /pdb:"Release/log4cpp.pdb" /machine:I386 /out:"Release/log4cpp.dll" /implib:"Release/log4cpp.lib" 
+.\Release\Appender.obj
+.\Release\AppenderSkeleton.obj
+.\Release\BasicConfigurator.obj
+.\Release\BasicLayout.obj
+.\Release\Category.obj
+.\Release\CategoryStream.obj
+.\Release\Configurator.obj
+.\Release\DllMain.obj
+.\Release\DummyThreads.obj
+.\Release\FileAppender.obj
+.\Release\Filter.obj
+.\Release\FixedContextCategory.obj
+.\Release\HierarchyMaintainer.obj
+.\Release\IdsaAppender.obj
+.\Release\LayoutAppender.obj
+.\Release\LoggingEvent.obj
+.\Release\MSThreads.obj
+.\Release\NDC.obj
+.\Release\NTEventLogAppender.obj
+.\Release\OmniThreads.obj
+.\Release\OstreamAppender.obj
+.\Release\PatternLayout.obj
+.\Release\PortabilityImpl.obj
+.\Release\Priority.obj
+.\Release\Properties.obj
+.\Release\PropertyConfigurator.obj
+.\Release\PropertyConfiguratorImpl.obj
+.\Release\PThreads.obj
+.\Release\RemoteSyslogAppender.obj
+.\Release\RollingFileAppender.obj
+.\Release\SimpleConfigurator.obj
+.\Release\SimpleLayout.obj
+.\Release\StringQueueAppender.obj
+.\Release\StringUtil.obj
+.\Release\TimeStamp.obj
+.\Release\Win32DebugAppender.obj
+.\Release\log4cppDLL.res
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPF7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DllMain.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp(256) : warning C4101: 'e' : unreferenced local variable
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Linking...
+   Creating library Release/log4cpp.lib and object Release/log4cpp.exp
+<h3>
+--------------------Configuration: testDLL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp'
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPFB.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testDLL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPFB.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPFC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testDLL.pdb" /machine:I386 /out:"Release/testDLL.exe" 
+.\Release\testDLL.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPFC.tmp"
+<h3>Output Window</h3>
+Compiling...
+testDLL.cpp
+fatal error C1083: Cannot open source file: 'C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+testDLL.exe - 1 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: log4cppDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPFD.bat" with contents
+[
+@echo off
+if not exist .\Debug md .\Debug
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\mc.exe" -h .\Debug -r .\Debug .\..\NTEventLogCategories.mc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\Bin\RC.exe" -r -fo .\Debug\NTEventLogCategories.res .\Debug\NTEventLogCategories.rc
+"C:\Programme\Microsoft Visual Studio\Common\MSDev98\..\..\VC98\Bin\link.exe" /MACHINE:IX86 -dll -noentry -out:.\Debug\NTEventLogAppender.dll .\Debug\NTEventLogCategories.res
+]
+Creating command line "C:\WINNT\temp\GAA5034\RSPFD.bat"
+Creating command line "rc.exe /l 0x409 /fo"Debug/log4cppDLL.res" /d "_DEBUG" "C:\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\log4cppDLL.rc"" 
+Performing Custom Build Step on ..\NTEventLogCategories.mc
+MC: Compiling .\..\NTEventLogCategories.mc
+Microsoft (R) Incremental Linker Version 6.00.8447
+Copyright (C) Microsoft Corp 1992-1998. All rights reserved.
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPFE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LOG4CPP_HAS_DLL" /D "LOG4CPP_BUILD_DLL" /FR"Debug/" /Fp"Debug/log4cppDLL.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\src\Appender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\AppenderSkeleton.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\BasicLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Category.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\CategoryStream.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Configurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DllMain.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\DummyThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Filter.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\FixedContextCategory.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\HierarchyMaintainer.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\IdsaAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LayoutAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\LoggingEvent.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\MSThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NDC.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\NTEventLogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OmniThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\OstreamAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PatternLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PortabilityImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Priority.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Properties.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PropertyConfiguratorImpl.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\PThreads.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RemoteSyslogAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\RollingFileAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleConfigurator.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\SimpleLayout.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringQueueAppender.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\StringUtil.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\TimeStamp.cpp"
+"C:\Entwicklung\dev_b6\log4cpp\src\Win32DebugAppender.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSPFE.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSPFF.tmp" with contents
+[
+kernel32.lib user32.lib ws2_32.lib advapi32.lib /nologo /dll /incremental:yes /pdb:"Debug/log4cppD.pdb" /debug /machine:I386 /out:"Debug/log4cppD.dll" /implib:"Debug/log4cppD.lib" /pdbtype:sept 
+.\Debug\Appender.obj
+.\Debug\AppenderSkeleton.obj
+.\Debug\BasicConfigurator.obj
+.\Debug\BasicLayout.obj
+.\Debug\Category.obj
+.\Debug\CategoryStream.obj
+.\Debug\Configurator.obj
+.\Debug\DllMain.obj
+.\Debug\DummyThreads.obj
+.\Debug\FileAppender.obj
+.\Debug\Filter.obj
+.\Debug\FixedContextCategory.obj
+.\Debug\HierarchyMaintainer.obj
+.\Debug\IdsaAppender.obj
+.\Debug\LayoutAppender.obj
+.\Debug\LoggingEvent.obj
+.\Debug\MSThreads.obj
+.\Debug\NDC.obj
+.\Debug\NTEventLogAppender.obj
+.\Debug\OmniThreads.obj
+.\Debug\OstreamAppender.obj
+.\Debug\PatternLayout.obj
+.\Debug\PortabilityImpl.obj
+.\Debug\Priority.obj
+.\Debug\Properties.obj
+.\Debug\PropertyConfigurator.obj
+.\Debug\PropertyConfiguratorImpl.obj
+.\Debug\PThreads.obj
+.\Debug\RemoteSyslogAppender.obj
+.\Debug\RollingFileAppender.obj
+.\Debug\SimpleConfigurator.obj
+.\Debug\SimpleLayout.obj
+.\Debug\StringQueueAppender.obj
+.\Debug\StringUtil.obj
+.\Debug\TimeStamp.obj
+.\Debug\Win32DebugAppender.obj
+.\Debug\log4cppDLL.res
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSPFF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Skipping... (no relevant changes detected)
+Appender.cpp
+AppenderSkeleton.cpp
+BasicConfigurator.cpp
+BasicLayout.cpp
+Category.cpp
+CategoryStream.cpp
+Configurator.cpp
+DllMain.cpp
+DummyThreads.cpp
+FileAppender.cpp
+Filter.cpp
+FixedContextCategory.cpp
+HierarchyMaintainer.cpp
+IdsaAppender.cpp
+LayoutAppender.cpp
+LoggingEvent.cpp
+MSThreads.cpp
+NDC.cpp
+NTEventLogAppender.cpp
+OmniThreads.cpp
+OstreamAppender.cpp
+PatternLayout.cpp
+PortabilityImpl.cpp
+Priority.cpp
+Properties.cpp
+PropertyConfigurator.cpp
+PropertyConfiguratorImpl.cpp
+PThreads.cpp
+RemoteSyslogAppender.cpp
+RollingFileAppender.cpp
+SimpleConfigurator.cpp
+SimpleLayout.cpp
+StringQueueAppender.cpp
+StringUtil.cpp
+TimeStamp.cpp
+Win32DebugAppender.cpp
+Linking...
+<h3>
+--------------------Configuration: testDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp'
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP100.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/testDLL.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP100.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP101.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testDLL.pdb" /debug /machine:I386 /out:"Debug/testDLL.exe" /pdbtype:sept 
+.\Debug\testDLL.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cppDLL\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP101.tmp"
+<h3>Output Window</h3>
+Compiling...
+testDLL.cpp
+fatal error C1083: Cannot open source file: 'C:\Entwicklung\dev_b6\log4cpp\tests\testDLL.cpp': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+testDLL.exe - 1 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: testMain - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP102.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testMain.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testmain.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP102.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP103.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testMain.pdb" /machine:I386 /out:"Release/testMain.exe" 
+.\Release\testmain.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP103.tmp"
+<h3>Output Window</h3>
+Compiling...
+testmain.cpp
+C:\Entwicklung\dev_b6\log4cpp\tests\testmain.cpp(100) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+Linking...
+   Creating library Release/testMain.lib and object Release/testMain.exp
+
+
+
+<h3>Results</h3>
+testMain.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: testMain - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP107.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/testMain.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testmain.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP107.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP108.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testMain.pdb" /debug /machine:I386 /out:"Debug/testMain.exe" /pdbtype:sept 
+.\Debug\testmain.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP108.tmp"
+<h3>Output Window</h3>
+Compiling...
+testmain.cpp
+c:\entwicklung\dev_b6\log4cpp\tests\testmain.cpp(100) : warning C4508: 'main' : function should return a value; 'void' return type assumed
+Linking...
+   Creating library Debug/testMain.lib and object Debug/testMain.exp
+
+
+
+<h3>Results</h3>
+testMain.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: testNDC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP10C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testNDC.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testNDC.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP10C.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP10D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testNDC.pdb" /machine:I386 /out:"Release/testNDC.exe" 
+.\Release\testNDC.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP10D.tmp"
+<h3>Output Window</h3>
+Compiling...
+testNDC.cpp
+Linking...
+   Creating library Release/testNDC.lib and object Release/testNDC.exp
+
+
+
+<h3>Results</h3>
+testNDC.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: testNDC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP111.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/testNDC.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testNDC.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP111.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP112.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testNDC.pdb" /debug /machine:I386 /out:"Debug/testNDC.exe" /pdbtype:sept 
+.\Debug\testNDC.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP112.tmp"
+<h3>Output Window</h3>
+Compiling...
+testNDC.cpp
+Linking...
+   Creating library Debug/testNDC.lib and object Debug/testNDC.exp
+
+
+
+<h3>Results</h3>
+testNDC.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: testNTEventLog - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp'
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP116.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testNTEventLog.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP116.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP117.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testNTEventLog.pdb" /machine:I386 /out:"Release/testNTEventLog.exe" 
+.\Release\testNTEventLog.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP117.tmp"
+<h3>Output Window</h3>
+Compiling...
+testNTEventLog.cpp
+fatal error C1083: Cannot open source file: 'C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+testNTEventLog.exe - 1 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: testNTEventLog - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp'
+
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP118.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/testNTEventLog.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP118.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP119.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testNTEventLog.pdb" /debug /machine:I386 /out:"Debug/testNTEventLog.exe" /pdbtype:sept 
+.\Debug\testNTEventLog.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP119.tmp"
+<h3>Output Window</h3>
+Compiling...
+testNTEventLog.cpp
+fatal error C1083: Cannot open source file: 'C:\Entwicklung\dev_b6\log4cpp\tests\testNTEventLog.cpp': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+testNTEventLog.exe - 1 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: testPattern - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP11A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\include" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/testPattern.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testPattern.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP11A.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP11B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/testPattern.pdb" /machine:I386 /out:"Release/testPattern.exe" 
+.\Release\testPattern.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Release\log4cpp.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP11B.tmp"
+<h3>Output Window</h3>
+Compiling...
+testPattern.cpp
+Linking...
+   Creating library Release/testPattern.lib and object Release/testPattern.exp
+
+
+
+<h3>Results</h3>
+testPattern.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: testPattern - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP11F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/testPattern.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Entwicklung\dev_b6\log4cpp\tests\testPattern.cpp"
+]
+Creating command line "cl.exe @C:\WINNT\temp\GAA5034\RSP11F.tmp" 
+Creating temporary file "C:\WINNT\temp\GAA5034\RSP120.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testPattern.pdb" /debug /machine:I386 /out:"Debug/testPattern.exe" /pdbtype:sept 
+.\Debug\testPattern.obj
+\Entwicklung\dev_b6\log4cpp\msvc6\log4cpp\Debug\log4cppD.lib
+]
+Creating command line "link.exe @C:\WINNT\temp\GAA5034\RSP120.tmp"
+<h3>Output Window</h3>
+Compiling...
+testPattern.cpp
+Linking...
+   Creating library Debug/testPattern.lib and object Debug/testPattern.exp
+
+
+
+<h3>Results</h3>
+testPattern.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
